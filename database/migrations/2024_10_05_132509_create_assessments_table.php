@@ -14,10 +14,10 @@ class CreateAssessmentsTable extends Migration
     public function up()
     {
         Schema::create('assessments', function (Blueprint $table) {
-            $table->id(); // Primary key
-            $table->string('assessment_name'); // Column to store the name of the assessment
-            $table->integer('grading_system'); // Column to store the grading system (e.g., 1992, 2000, etc.)
-            $table->timestamps(); // Timestamps for created_at and updated_at
+            $table->string('assessment_id')->primary(); 
+            $table->string('assessment_name'); 
+            $table->integer('grading_system'); 
+            $table->timestamps(); // 
         });
     }
 

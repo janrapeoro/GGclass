@@ -15,12 +15,12 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             // Define the columns of the table
-            $table->string('school_id')->primary();   // Primary Key - School ID
-            $table->string('full_name');             // Full name of the student
-            $table->string('in_game_name');          // In-game name of the student
-            $table->string('email')->unique();       // Unique email address
-            $table->string('course');                // Course the student is taking
-            $table->timestamps();                    // Automatically adds created_at and updated_at columns
+            $table->string('school_id')->primary();   
+            $table->string('full_name');            
+            $table->string('in_game_name');          
+            $table->string('email')->unique();      
+            $table->string('course');                
+            $table->timestamps();                   
         });
     }
     
