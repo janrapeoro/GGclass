@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             StudentSeeder::class,
             AssessmentSeeder::class,
-            AssessmentTypeSeeder::class
+            AssessmentTypeSeeder::class,
+            ScoreSeeder::class,
         ]);
         
     }

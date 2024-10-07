@@ -85,3 +85,7 @@
   left: 330px;
   top:30px;
 }
+
+body {
+  overflow-x: hidden;
+}

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use App\Models\Assessment;
+use App\Models\AssessmentType;
+use App\Models\Score;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -31,18 +33,27 @@ public function show($school_id)
   return view('grade-book.student-data.student-data',  compact('student_data', 'test'));
 }
       
-// New method to display student assessment
 public function assessment($school_id, $assessment_id)
 {
-  // Retrieve the student by their school_id
-  $student_data = Student::where('school_id', $school_id)->firstOrFail();
+    // Retrieve the student by their school_id
+    $student_data = Student::where('school_id', $school_id)->firstOrFail();
 
-  // Retrieve the specific assessment by its ID
-  $assessment = Assessment::where('assessment_id', $assessment_id)->firstOrFail();
+    // Retrieve the assessment name by its assessment_id
+    $assessment = Assessment::where('assessment_id', $assessment_id)->firstOrFail();
 
-  // Return the 'student-assessment' view and pass the student data and assessment name
-  return view('grade-book.student-assessment.student-assessment', compact('student_data', 'assessment'));
+    // Retrieve all the assessment types that belong to the selected assessment
+    $assessment_types = AssessmentType::where('assessment_id', $assessment_id)->get();
+
+    // Retrieve the student's scores for those assessment types
+    $scores = Score::where('student_id', $school_id)
+    ->whereIn('assessment_type_id', $assessment_types->pluck('assessment_type_id'))
+    ->get()
+    ->keyBy('assessment_type_id'); // Key by 'assessment_type_id' to match with assessment types
+
+    // Return the student-assessment view, passing student data, assessment name, assessment types, and scores
+    return view('grade-book.student-assessment.student-assessment', compact('student_data', 'assessment', 'assessment_types', 'scores'));
 }
+
 
 
 }

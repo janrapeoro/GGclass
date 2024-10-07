@@ -18,28 +18,28 @@ class AssessmentSeeder extends Seeder
         // Insert sample assessments
         DB::table('assessments')->insert([
             [
-                'assessment_id' => 'test101',
+                'assessment_id' => '202400001',
                 'assessment_name' => 'Tests and Quizzes', 
                 'grading_system' => 2018, 
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'assessment_id' => 'test102',
+                'assessment_id' => '202400002',
                 'assessment_name' => 'Activity', 
                 'grading_system' => 2018, 
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'assessment_id' => 'test103',
+                'assessment_id' => '202400003',
                 'assessment_name' => 'Project', 
                 'grading_system' => 2018, 
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'assessment_id' => 'test104',
+                'assessment_id' => '202400004',
                 'assessment_name' => 'Term Paper', 
                 'grading_system' => 2018, 
                 'created_at' => now(),
