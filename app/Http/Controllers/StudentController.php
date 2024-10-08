@@ -54,6 +54,22 @@ public function assessment($school_id, $assessment_id)
     return view('grade-book.student-assessment.student-assessment', compact('student_data', 'assessment', 'assessment_types', 'scores'));
 }
 
+// Method to export the Excel template file
+public function export()
+{
+    // Path to the template Excel file
+    $filePath = storage_path('app/public/gradebooktemplate.xls');
+    
+    // Check if the file exists
+    if (file_exists($filePath)) {
+        // Return the file as a download response
+        return response()->download($filePath);
+    } else {
+        // Return an error if the file is not found
+        return redirect()->back()->with('error', 'File not found.');
+    }
+}
+
 
 
 }

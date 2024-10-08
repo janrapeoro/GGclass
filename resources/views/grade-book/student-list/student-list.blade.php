@@ -25,7 +25,9 @@
                 <h1 class="text">Student List</h1>
             </div>
             <div class="col-md-4 mt-4">
+               <a href="{{ route('student-list.export') }}">
                 <button type="button" class="export">Export</button>
+               </a> 
             </div>
         </div>
     </div>

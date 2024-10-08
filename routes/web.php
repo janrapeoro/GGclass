@@ -15,6 +15,8 @@ Route::get('/student/{school_id}', [StudentController::class, 'show'])->name('st
 // student-assessment.blade.php
 Route::get('/student-assessment/{school_id}/{assessment_id}', [StudentController::class, 'assessment'])->name('student-assessment');
 
+// Route for exporting the Excel file
+Route::get('/students-list/export', [StudentController::class, 'export'])->name('student-list.export');
 
 
 
