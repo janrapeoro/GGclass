@@ -45,6 +45,14 @@ class AssessmentSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
+            [
+                'assessment_id' => '202400005',
+                'assessment_name' => 'Exams', 
+                'grading_system' => 2018, 
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }

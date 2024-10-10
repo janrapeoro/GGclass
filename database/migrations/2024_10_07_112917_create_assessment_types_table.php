@@ -11,6 +11,7 @@ return new class extends Migration
         Schema::create('assessment_types', function (Blueprint $table) {
             $table->id('assessment_type_id'); // Primary key for assessment types
             $table->string('assessment_type_name'); // e.g., Quiz 1, Activity 1
+            $table->integer('total_scores'); // assessment types score
             $table->unsignedBigInteger('assessment_id'); // Foreign key to link to assessments
             $table->timestamps();
     

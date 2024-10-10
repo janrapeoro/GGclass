@@ -17,21 +17,21 @@ class StudentSeeder extends Seeder
                 'full_name' => 'Jan Raphael Peoro',       
                 'in_game_name' => 'Ainz',               
                 'email' => 'japeoro@gbox.adnu.edu.ph',     
-                'course' => 'BS Information Technology',   
+                'course' => 'BSIT',   
             ],
             [
                 'school_id' => '202010502',
                 'full_name' => 'John Irvin Panganiban',
                 'in_game_name' => 'Jirvs',
                 'email' => 'jirvs@gbox.adnu.edu.ph',
-                'course' => 'BS Information Technology',
+                'course' => 'BSIT',
             ],
             [
                 'school_id' => '202010503',
                 'full_name' => 'John Ignacious Albano',
                 'in_game_name' => 'Beelzebub',
                 'email' => 'jigs@gbox.adnu.edu.ph',
-                'course' => 'BS Information Technology',
+                'course' => 'BSIT',
             ],
 
             [
@@ -39,7 +39,7 @@ class StudentSeeder extends Seeder
                 'full_name' => 'Angel Santos',
                 'in_game_name' => 'Angel',
                 'email' => 'angel@gbox.adnu.edu.ph',
-                'course' => 'BS Information Systems',
+                'course' => 'BSIS',
             ],
 
             [
@@ -47,7 +47,7 @@ class StudentSeeder extends Seeder
                 'full_name' => 'Brandon Yu',
                 'in_game_name' => 'Mr. Yu',
                 'email' => 'yu@gbox.adnu.edu.ph',
-                'course' => 'BS Information Systems',
+                'course' => 'BSIS',
             ],
 
             [
@@ -55,7 +55,7 @@ class StudentSeeder extends Seeder
                 'full_name' => 'Catherine Penelope',
                 'in_game_name' => 'Pen',
                 'email' => 'cath@gbox.adnu.edu.ph',
-                'course' => 'BS Information Systems',
+                'course' => 'BSIS',
             ],
             
             [
@@ -63,7 +63,7 @@ class StudentSeeder extends Seeder
                 'full_name' => 'Christian Rafael',
                 'in_game_name' => 'Tian',
                 'email' => 'tian@gbox.adnu.edu.ph',
-                'course' => 'BS Information Systems',
+                'course' => 'BSIT',
             ],
 
             [
@@ -71,7 +71,7 @@ class StudentSeeder extends Seeder
                 'full_name' => 'Steffany Hanzel',
                 'in_game_name' => 'Stef',
                 'email' => 'stef@gbox.adnu.edu.ph',
-                'course' => 'BS Information Systems',
+                'course' => 'BSIS',
             ],
         ]);
     }
