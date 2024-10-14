@@ -6,6 +6,8 @@ use App\Models\Student;
 use App\Models\Assessment;
 use App\Models\AssessmentType;
 use App\Models\Score;
+use App\Exports\StudentsExport;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -56,20 +58,9 @@ public function assessment($school_id, $assessment_id)
 
 // Method to export the Excel template file
 public function export()
-{
-    // Path to the template Excel file
-    $filePath = storage_path('app/public/gradebooktemplate.xls');
-    
-    // Check if the file exists
-    if (file_exists($filePath)) {
-        // Return the file as a download response
-        return response()->download($filePath);
-    } else {
-        // Return an error if the file is not found
-        return redirect()->back()->with('error', 'File not found.');
+    {
+      $studentsExport = new StudentsExport();
+        return $studentsExport->export();
     }
-}
-
-
 
 }

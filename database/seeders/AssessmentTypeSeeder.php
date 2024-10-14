@@ -69,37 +69,37 @@ class AssessmentTypeSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
-            [
-                'assessment_type_name' => 'Prelim Exam',
-                'total_scores' => '60',
-                'assessment_id' => '202400005', // Links to 'Exams'
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'assessment_type_name' => 'Prelim Exam',
+            //     'total_scores' => '60',
+            //     'assessment_id' => '202400005', // Links to 'Exams'
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'assessment_type_name' => 'Midterm Exam',
-                'total_scores' => '60',
-                'assessment_id' => '202400005', // Links to 'Exams'
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'assessment_type_name' => 'Midterm Exam',
+            //     'total_scores' => '60',
+            //     'assessment_id' => '202400006', // Links to 'Exams'
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'assessment_type_name' => 'Prefinal Exam',
-                'total_scores' => '60',
-                'assessment_id' => '202400005', // Links to 'Exams'
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'assessment_type_name' => 'Prefinal Exam',
+            //     'total_scores' => '60',
+            //     'assessment_id' => '202400007', // Links to 'Exams'
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'assessment_type_name' => 'Final Exam',
-                'total_scores' => '60',
-                'assessment_id' => '202400005', // Links to 'Exams'
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'assessment_type_name' => 'Final Exam',
+            //     'total_scores' => '60',
+            //     'assessment_id' => '202400008', // Links to 'Exams'
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
         ]);
     }
 }

@@ -75,36 +75,36 @@ class ScoreSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
-            [
-                'student_id' => '202010501',
-                'assessment_type_id' => 9, // Prelim
-                'score' => 50,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010501',
+            //     'assessment_type_id' => 9, // Prelim
+            //     'score' => 50,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010501',
-                'assessment_type_id' => 10, // Midterm
-                'score' => 51,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010501',
+            //     'assessment_type_id' => 10, // Midterm
+            //     'score' => 51,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010501',
-                'assessment_type_id' => 11, // PreFinal
-                'score' => 52,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'student_id' => '202010501',
-                'assessment_type_id' => 12, // FinalExam
-                'score' => 53,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010501',
+            //     'assessment_type_id' => 11, // PreFinal
+            //     'score' => 52,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'student_id' => '202010501',
+            //     'assessment_type_id' => 12, // FinalExam
+            //     'score' => 53,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
             // John Irvin
             [
                 'student_id' => '202010502',
@@ -169,36 +169,36 @@ class ScoreSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
-            [
-                'student_id' => '202010502',
-                'assessment_type_id' => 9, // Prelim
-                'score' => 50,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010502',
+            //     'assessment_type_id' => 9, // Prelim
+            //     'score' => 50,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010502',
-                'assessment_type_id' => 10, // Midterm
-                'score' => 51,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010502',
+            //     'assessment_type_id' => 10, // Midterm
+            //     'score' => 51,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010502',
-                'assessment_type_id' => 11, // PreFinal
-                'score' => 52,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'student_id' => '202010502',
-                'assessment_type_id' => 12, // FinalExam
-                'score' => 53,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010502',
+            //     'assessment_type_id' => 11, // PreFinal
+            //     'score' => 52,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'student_id' => '202010502',
+            //     'assessment_type_id' => 12, // FinalExam
+            //     'score' => 53,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
             // John Ignacious Albano
             
@@ -265,36 +265,36 @@ class ScoreSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
-            [
-                'student_id' => '202010503',
-                'assessment_type_id' => 9, // Prelim
-                'score' => 50,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010503',
+            //     'assessment_type_id' => 9, // Prelim
+            //     'score' => 50,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010503',
-                'assessment_type_id' => 10, // Midterm
-                'score' => 51,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010503',
+            //     'assessment_type_id' => 10, // Midterm
+            //     'score' => 51,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010503',
-                'assessment_type_id' => 11, // PreFinal
-                'score' => 52,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'student_id' => '202010503',
-                'assessment_type_id' => 12, // FinalExam
-                'score' => 53,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010503',
+            //     'assessment_type_id' => 11, // PreFinal
+            //     'score' => 52,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'student_id' => '202010503',
+            //     'assessment_type_id' => 12, // FinalExam
+            //     'score' => 53,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
             // Angel Santos
 
@@ -361,36 +361,36 @@ class ScoreSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
-            [
-                'student_id' => '202010504',
-                'assessment_type_id' => 9, // Prelim
-                'score' => 50,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010504',
+            //     'assessment_type_id' => 9, // Prelim
+            //     'score' => 50,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010504',
-                'assessment_type_id' => 10, // Midterm
-                'score' => 51,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010504',
+            //     'assessment_type_id' => 10, // Midterm
+            //     'score' => 51,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
-            [
-                'student_id' => '202010504',
-                'assessment_type_id' => 11, // PreFinal
-                'score' => 52,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'student_id' => '202010504',
-                'assessment_type_id' => 12, // FinalExam
-                'score' => 53,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'student_id' => '202010504',
+            //     'assessment_type_id' => 11, // PreFinal
+            //     'score' => 52,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'student_id' => '202010504',
+            //     'assessment_type_id' => 12, // FinalExam
+            //     'score' => 53,
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
 
            // Brandon Yu
 
@@ -457,36 +457,36 @@ class ScoreSeeder extends Seeder
             'updated_at' => now(),
         ],
 
-        [
-            'student_id' => '202010505',
-            'assessment_type_id' => 9, // Prelim
-            'score' => 50,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010505',
+        //     'assessment_type_id' => 9, // Prelim
+        //     'score' => 50,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010505',
-            'assessment_type_id' => 10, // Midterm
-            'score' => 51,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010505',
+        //     'assessment_type_id' => 10, // Midterm
+        //     'score' => 51,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010505',
-            'assessment_type_id' => 11, // PreFinal
-            'score' => 52,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-        [
-            'student_id' => '202010505',
-            'assessment_type_id' => 12, // FinalExam
-            'score' => 53,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010505',
+        //     'assessment_type_id' => 11, // PreFinal
+        //     'score' => 52,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
+        // [
+        //     'student_id' => '202010505',
+        //     'assessment_type_id' => 12, // FinalExam
+        //     'score' => 53,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
         // Catherine Penelope
 
@@ -553,36 +553,36 @@ class ScoreSeeder extends Seeder
             'updated_at' => now(),
         ],
 
-        [
-            'student_id' => '202010506',
-            'assessment_type_id' => 9, // Prelim
-            'score' => 50,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010506',
+        //     'assessment_type_id' => 9, // Prelim
+        //     'score' => 50,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010506',
-            'assessment_type_id' => 10, // Midterm
-            'score' => 51,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010506',
+        //     'assessment_type_id' => 10, // Midterm
+        //     'score' => 51,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010506',
-            'assessment_type_id' => 11, // PreFinal
-            'score' => 52,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-        [
-            'student_id' => '202010506',
-            'assessment_type_id' => 12, // FinalExam
-            'score' => 53,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010506',
+        //     'assessment_type_id' => 11, // PreFinal
+        //     'score' => 52,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
+        // [
+        //     'student_id' => '202010506',
+        //     'assessment_type_id' => 12, // FinalExam
+        //     'score' => 53,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
         // Christian Rafael
         [
@@ -648,36 +648,36 @@ class ScoreSeeder extends Seeder
             'updated_at' => now(),
         ],
 
-        [
-            'student_id' => '202010509',
-            'assessment_type_id' => 9, // Prelim
-            'score' => 50,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010509',
+        //     'assessment_type_id' => 9, // Prelim
+        //     'score' => 50,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010509',
-            'assessment_type_id' => 10, // Midterm
-            'score' => 51,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010509',
+        //     'assessment_type_id' => 10, // Midterm
+        //     'score' => 51,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010509',
-            'assessment_type_id' => 11, // PreFinal
-            'score' => 52,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-        [
-            'student_id' => '202010509',
-            'assessment_type_id' => 12, // FinalExam
-            'score' => 53,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010509',
+        //     'assessment_type_id' => 11, // PreFinal
+        //     'score' => 52,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
+        // [
+        //     'student_id' => '202010509',
+        //     'assessment_type_id' => 12, // FinalExam
+        //     'score' => 53,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
         // Steffany Hanzel
 
@@ -744,36 +744,36 @@ class ScoreSeeder extends Seeder
             'updated_at' => now(),
         ],
 
-        [
-            'student_id' => '202010510',
-            'assessment_type_id' => 9, // Prelim
-            'score' => 50,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010510',
+        //     'assessment_type_id' => 9, // Prelim
+        //     'score' => 50,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010510',
-            'assessment_type_id' => 10, // Midterm
-            'score' => 51,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010510',
+        //     'assessment_type_id' => 10, // Midterm
+        //     'score' => 51,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
-        [
-            'student_id' => '202010510',
-            'assessment_type_id' => 11, // PreFinal
-            'score' => 52,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
-        [
-            'student_id' => '202010510',
-            'assessment_type_id' => 12, // FinalExam
-            'score' => 53,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ],
+        // [
+        //     'student_id' => '202010510',
+        //     'assessment_type_id' => 11, // PreFinal
+        //     'score' => 52,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
+        // [
+        //     'student_id' => '202010510',
+        //     'assessment_type_id' => 12, // FinalExam
+        //     'score' => 53,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ],
 
         ]);
     }

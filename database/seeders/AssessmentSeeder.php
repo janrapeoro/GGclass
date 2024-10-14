@@ -19,14 +19,14 @@ class AssessmentSeeder extends Seeder
         DB::table('assessments')->insert([
             [
                 'assessment_id' => '202400001',
-                'assessment_name' => 'Tests and Quizzes', 
+                'assessment_name' => 'Test and Quizzes', 
                 'grading_system' => 2018, 
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
                 'assessment_id' => '202400002',
-                'assessment_name' => 'Activity', 
+                'assessment_name' => 'Recitation', 
                 'grading_system' => 2018, 
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -46,13 +46,36 @@ class AssessmentSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
-            [
-                'assessment_id' => '202400005',
-                'assessment_name' => 'Exams', 
-                'grading_system' => 2018, 
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // [
+            //     'assessment_id' => '202400005',
+            //     'assessment_name' => 'PRELIM EXAM', 
+            //     'grading_system' => 2018, 
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+
+            // [
+            //     'assessment_id' => '202400006',
+            //     'assessment_name' => 'MIDTERM EXAM', 
+            //     'grading_system' => 2018, 
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+
+            // [
+            //     'assessment_id' => '202400007',
+            //     'assessment_name' => 'PREFINAL EXAM', 
+            //     'grading_system' => 2018, 
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'assessment_id' => '202400008',
+            //     'assessment_name' => 'FINAL EXAM', 
+            //     'grading_system' => 2018, 
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
         ]);
     }
 }
