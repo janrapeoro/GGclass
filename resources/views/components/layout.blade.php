@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Website Name -->
-    <title>{{ env('APP_NAME') }}</title>
+    <title>Gradebook</title>
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body class="main-body">
     <header>
         <nav class="navbar navbar-expand-lg navigation">
             <div class="container-fluid">

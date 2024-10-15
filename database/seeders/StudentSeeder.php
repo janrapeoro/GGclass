@@ -59,7 +59,7 @@ class StudentSeeder extends Seeder
             ],
             
             [
-                'school_id' => '202010509',
+                'school_id' => '202010507',
                 'full_name' => 'Christian Rafael',
                 'in_game_name' => 'Tian',
                 'email' => 'tian@gbox.adnu.edu.ph',
@@ -67,7 +67,7 @@ class StudentSeeder extends Seeder
             ],
 
             [
-                'school_id' => '202010510',
+                'school_id' => '202010508',
                 'full_name' => 'Steffany Hanzel',
                 'in_game_name' => 'Stef',
                 'email' => 'stef@gbox.adnu.edu.ph',

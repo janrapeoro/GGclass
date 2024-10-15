@@ -73,7 +73,7 @@
                 @foreach ($assessment_types as $type)
                     <div class="col-6 assessment">
                         <!-- Display the assessment type name, e.g., Quiz 1, Quiz 2 -->
-                        <p class="h2 title">{{ $type->assessment_type_name }}</p>
+                        <p class="h3 title">{{ $type->assessment_type_name }}</p>
                         
                         <!-- Display the student's score for this assessment type -->
                         <p class="h5 score">
