@@ -14,7 +14,7 @@ class Score extends Model
     // A score belongs to a student
     public function student()
     {
-        return $this->belongsTo(Student::class, 'student_id', 'school_id');
+        return $this->belongsTo(Student::class, 'student_id', 'student_id');
     }
 
     // A score belongs to an assessment type (e.g., "Score 50" belongs to "Quiz 1")

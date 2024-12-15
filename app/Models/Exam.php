@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Assessment extends Model
+class Exam extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'assessment_id'; 
+    protected $primaryKey = 'exams_id'; 
     public $incrementing = false; 
 
-    public function assessmentTypes()
+    public function examTypes()
     {
-        return $this->hasMany(AssessmentType::class, 'assessment_id');
+        return $this->hasMany(ExamType::class, 'exams_id');
     }
 }

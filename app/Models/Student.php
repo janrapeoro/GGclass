@@ -9,11 +9,10 @@ class Student extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'school_id'; // school_id is the primary key
+    protected $primaryKey = 'student_id'; 
 
-    // A student has many scores for different assessment types
     public function scores()
     {
-        return $this->hasMany(Score::class, 'student_id', 'school_id');
+        return $this->hasMany(Score::class, 'student_id', 'student_id');
     }
 }

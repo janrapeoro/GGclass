@@ -18,6 +18,9 @@ class DatabaseSeeder extends Seeder
             AssessmentSeeder::class,
             AssessmentTypeSeeder::class,
             ScoreSeeder::class,
+            ExamSeeder::class,
+            ExamTypeSeeder::class,
+            ExamScoreSeeder::class,
         ]);
         
     }

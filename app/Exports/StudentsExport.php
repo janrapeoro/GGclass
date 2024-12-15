@@ -24,7 +24,7 @@ class StudentsExport
 
         foreach ($students as $index => $student) {
             $row = $startRow + $index;
-            $sheet1->setCellValue("B{$row}", (int) $student->school_id);
+            $sheet1->setCellValue("B{$row}", (int) $student->student_id);
             $sheet1->setCellValue("C{$row}", $student->full_name);
             $sheet1->setCellValue("D{$row}", $student->course);
             $gradingSystem = (int) ($assessments->first()->grading_system ?? 0);
@@ -48,7 +48,7 @@ class StudentsExport
 
                 // Populate student scores in rows 4-103
                 foreach ($students as $rowIndex => $student) {
-                    $score = Score::where('student_id', $student->school_id)
+                    $score = Score::where('student_id', $student->student_id)
                                   ->where('assessment_type_id', $type->assessment_type_id)
                                   ->first();
                     $scoreValue = (int) ($score->score ?? 0);

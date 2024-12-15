@@ -1,12 +1,36 @@
 <?php
 
-
+use App\Http\Controllers\ClassController;
+use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 
 // students-list.blade.php
 Route::get('/students-list', [StudentController::class, 'index'])->name('student-list');
+
+
+Route::view('/students-data', 'grade-book.student-data.student-assessment')->name('students-assessment');
+Route::view('/students-score', 'grade-book.student-assessment.student-score')->name('students-score');
+
+
+Route::get('/students/{id}', [StudentController::class, 'show'])->name('student-details');
+Route::get('/students/{student_id}/assessment/{assessment_id}/scores', [StudentController::class, 'viewScores'])->name('student-scores');
+
+
+//class-dashboard // 
+Route::view('/class-dashboard', 'class-dashboard.class-dashboard')->name('create-class');
+Route::view('/class-list', 'class-dashboard.class-list')->name('class-list');
+
+Route::post('/classes/store', [ClassController::class, 'store'])->name('classes.store');
+
+Route::get('/class-list', [ClassController::class, 'index'])->name('class-list');
+
+
+
+
+
+
 
 // student-data.blade.php
 // Route::view('/students-data', 'grade-book.student-data.student-data')->name('student-data');
@@ -17,8 +41,6 @@ Route::get('/student-assessment/{school_id}/{assessment_id}', [StudentController
 
 // Route for exporting the Excel file
 Route::get('/students-list/export', [StudentController::class, 'export'])->name('student-list.export');
-
-
 
 
 
