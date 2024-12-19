@@ -6,16 +6,20 @@ use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 
-// students-list.blade.php
+
+// Gradebook
+
+// grade-book.student-list.student-list
 Route::get('/students-list', [StudentController::class, 'index'])->name('student-list');
 
-
-Route::view('/students-data', 'grade-book.student-data.student-assessment')->name('students-assessment');
-Route::view('/students-score', 'grade-book.student-assessment.student-score')->name('students-score');
-
-
+// grade-book.student-data.student-assessment
 Route::get('/students/{id}', [StudentController::class, 'show'])->name('student-details');
+
+// grade-book.student-assessment.student-score
 Route::get('/students/{student_id}/assessment/{assessment_id}/scores', [StudentController::class, 'viewScores'])->name('student-scores');
+
+// Route for exporting the Excel file
+Route::get('/students-list/export', [StudentController::class, 'export'])->name('student-list.export');
 
 
 //class-dashboard // 
@@ -29,24 +33,21 @@ Route::get('/class-list', [ClassController::class, 'index'])->name('class-list')
 
 
 
+// Sample Route
 
-
-
-// student-data.blade.php
-// Route::view('/students-data', 'grade-book.student-data.student-data')->name('student-data');
-Route::get('/student/{school_id}', [StudentController::class, 'show'])->name('student.show');
-
-// student-assessment.blade.php
-Route::get('/student-assessment/{school_id}/{assessment_id}', [StudentController::class, 'assessment'])->name('student-assessment');
-
-// Route for exporting the Excel file
-Route::get('/students-list/export', [StudentController::class, 'export'])->name('student-list.export');
-
-
-
-// Sample
+// Route::view('/students-data', 'grade-book.student-data.student-assessment')->name('students-assessment');
+// Route::view('/students-score', 'grade-book.student-assessment.student-score')->name('students-score');
 
 // Route::get('/', function() { return view('welcome');});
 
 // Route::view('/', 'post.index')->name('home');
+
 // Route::view('/students-list', 'grade-book.student-list')->name('students-list');
+
+
+// student-data.blade.php
+// Route::view('/students-data', 'grade-book.student-data.student-data')->name('student-data');
+// Route::get('/student/{school_id}', [StudentController::class, 'show'])->name('student.show');
+
+// student-assessment.blade.php
+// Route::get('/student-assessment/{school_id}/{assessment_id}', [StudentController::class, 'assessment'])->name('student-assessment');

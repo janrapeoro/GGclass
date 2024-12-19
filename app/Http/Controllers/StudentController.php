@@ -22,8 +22,7 @@ class StudentController extends Controller
           $student->full_name = strtoupper($student->full_name);
           return $student;
       });
-  
-      // Pass the transformed student list to the Blade view
+
       return view('grade-book.student-list.student-list', compact('student_list'));
   }
 
@@ -35,7 +34,6 @@ class StudentController extends Controller
     // Convert the full_name to uppercase
     $student->full_name = strtoupper($student->full_name);
 
-    // Retrieve all assessments (modify this based on actual relations later)
     $assessments = Assessment::all();
 
     // Pass data to the 'student-assessment' view
@@ -47,7 +45,7 @@ public function viewScores($student_id, $assessment_id)
     // Retrieve the student's details using the student ID
     $student = Student::findOrFail($student_id);
 
-    // Convert the full_name to uppercase (if required by your use case)
+    // Convert the full_name to uppercase
     $student->full_name = strtoupper($student->full_name);
 
     // Retrieve all assessment types for the selected assessment
@@ -69,22 +67,6 @@ public function export()
         return $studentsExport->export();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 // // Method to display individual student data
 // public function show($student_data)
