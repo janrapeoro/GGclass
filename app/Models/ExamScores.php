@@ -9,7 +9,7 @@ class ExamScores extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'exams_scores_id';
+    protected $primaryKey = 'exam_score_id';
 
     public function student()
     {
@@ -18,7 +18,6 @@ class ExamScores extends Model
 
     public function examType()
     {
-        return $this->belongsTo(AssessmentType::class, 'exams_type_id');
+        return $this->belongsTo(ExamType::class, 'exams_type_id');
     }
-
 }

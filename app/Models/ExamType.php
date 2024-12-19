@@ -11,13 +11,13 @@ class ExamType extends Model
 
     protected $primaryKey = 'exams_type_id';
 
-    public function exams()
+    public function exam()
     {
-        return $this->belongsTo(Exams::class, 'exams_id');
+        return $this->belongsTo(Exam::class, 'exams_id');
     }
 
     public function scores()
     {
-        return $this->hasMany(ExamScore::class, 'exams_type_id');
+        return $this->hasMany(ExamScores::class, 'exams_type_id');
     }
 }

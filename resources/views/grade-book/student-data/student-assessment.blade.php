@@ -80,12 +80,25 @@
                     <tbody>
                         @foreach ($assessments as $assessment)
                             <tr class="table-row"
-                                onclick="window.location='{{ route('student-scores', ['student_id' => $student->student_id, 'assessment_id' => $assessment->assessment_id]) }}'">
+                                onclick="window.location='{{ route('student-assessment-scores', ['student_id' => $student->student_id, 'assessment_id' => $assessment->assessment_id]) }}'">
                                 <td>
                                     <p class="challenge">{{ $assessment->assessment_name }}</p>
                                 </td>
                                 <td>
                                     <p class="percentage">{{ $assessment->assessment_percentage }}%</p>
+                                </td>
+                            </tr>
+                        @endforeach
+
+                        <!-- New code for exams -->
+                        @foreach ($exams as $exam)
+                            <tr class="table-row"
+                                onclick="window.location='{{ route('student-exam-scores', ['student_id' => $student->student_id, 'exam_id' => $exam->exams_id]) }}'">
+                                <td>
+                                    <p class="challenge">{{ $exam->exam_name }}</p>
+                                </td>
+                                <td>
+                                    <p class="percentage">{{ $exam->exam_percentage }}%</p>
                                 </td>
                             </tr>
                         @endforeach

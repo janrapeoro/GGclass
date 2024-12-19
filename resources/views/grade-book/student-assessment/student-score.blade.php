@@ -76,20 +76,46 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($scores as $score)
-                            <tr class="table-row">
-                                <td>
-                                    <p class="challenge">{{ $score->assessmentType->assessment_type_name }}</p>
-                                </td>
-                                <td>
-                                    <p class="total-points">{{ $score->assessmentType->total_scores }}</p>
-                                </td>
-                                <td>
-                                    <p class="individual-points">{{ $score->score }}</p>
-                                </td>
-                            </tr>
-                        @endforeach
+                        <!-- Handle Assessments -->
+                        @if (isset($assessmentTypes) && !empty($assessmentTypes))
+                            @foreach ($assessmentTypes as $assessmentType)
+                                <tr class="table-row">
+                                    <td>
+                                        <p class="challenge">{{ $assessmentType->assessment_type_name }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="total-points">{{ $assessmentType->total_scores }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="individual-points">
+                                            {{ $scores->firstWhere('assessment_type_id', $assessmentType->assessment_type_id)->score ?? 'No Score' }}
+                                        </p>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        @endif
+
+                        <!-- Handle Exams -->
+                        @if (isset($examTypes) && !empty($examTypes))
+                            @foreach ($examTypes as $examType)
+                                <tr class="table-row">
+                                    <td>
+                                        <p class="challenge">{{ $examType->exams_type_name }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="total-points">{{ $examType->total_scores }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="individual-points">
+                                            {{ $examScores->firstWhere('exams_type_id', $examType->exams_type_id)->score ?? 'No Score' }}
+                                        </p>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        @endif
                     </tbody>
+
+
                 </table>
             </div>
 

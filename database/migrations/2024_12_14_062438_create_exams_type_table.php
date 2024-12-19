@@ -11,16 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('exams_type', function (Blueprint $table) {
+        Schema::create('exam_types', function (Blueprint $table) {
             $table->id('exams_type_id');
             $table->string('exams_type_name');
             $table->integer('total_scores');
             $table->unsignedBigInteger('exams_id');
             $table->timestamps();
-
+        
             $table->foreign('exams_id')->references('exams_id')->on('exams')->onDelete('cascade');
         });
-
      
     }
 

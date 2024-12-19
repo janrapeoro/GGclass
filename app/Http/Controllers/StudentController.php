@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use App\Models\Exam;
+use App\Models\ExamType;
+use App\Models\ExamScores;
 use App\Models\Assessment;
 use App\Models\AssessmentType;
 use App\Models\Score;
@@ -35,12 +38,13 @@ class StudentController extends Controller
     $student->full_name = strtoupper($student->full_name);
 
     $assessments = Assessment::all();
+    $exams = Exam::all();
 
     // Pass data to the 'student-assessment' view
-    return view('grade-book.student-data.student-assessment', compact('student', 'assessments'));
+    return view('grade-book.student-data.student-assessment', compact('student', 'assessments', 'exams'));
 }
 
-public function viewScores($student_id, $assessment_id)
+public function viewAssessmentScores($student_id, $assessment_id)
 {
     // Retrieve the student's details using the student ID
     $student = Student::findOrFail($student_id);
@@ -58,6 +62,23 @@ public function viewScores($student_id, $assessment_id)
 
     // Pass the data to the Blade view
     return view('grade-book.student-assessment.student-score', compact('student', 'scores', 'assessmentTypes'));
+}
+
+// Method to view a student's exam scores
+public function viewExamScores($student_id, $exam_id)
+{
+        $student = Student::findOrFail($student_id);
+        $student->full_name = strtoupper($student->full_name);
+
+        // Fetch exam types associated with the exam
+        $examTypes = ExamType::where('exams_id', $exam_id)->get();
+
+        // Fetch scores for the selected student and exam types
+        $examScores = ExamScores::where('student_id', $student_id)
+                                ->whereIn('exams_type_id', $examTypes->pluck('exams_type_id'))
+                                ->get();
+
+        return view('grade-book.student-assessment.student-score', compact('student', 'examTypes', 'examScores'));
 }
 
 

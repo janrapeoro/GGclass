@@ -11,17 +11,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('exams_scores', function (Blueprint $table) {
-            $table->id('exam_score_id'); // Primary key
-            $table->unsignedBigInteger('student_id'); // Foreign key to link to students
-            $table->unsignedBigInteger('exams_type_id'); // Foreign key to link to assessment types
-            $table->integer('score'); // Student's score
+        Schema::create('exam_scores', function (Blueprint $table) {
+            $table->id('exam_score_id');
+            $table->unsignedBigInteger('student_id');
+            $table->unsignedBigInteger('exams_type_id');
+            $table->integer('score');
             $table->timestamps();
-    
-            // Foreign key constraints
+        
             $table->foreign('student_id')->references('student_id')->on('students')->onDelete('cascade');
-            $table->foreign('exams_type_id')->references('exams_type_id')->on('exams_type')->onDelete('cascade');
+            $table->foreign('exams_type_id')->references('exams_type_id')->on('exam_types')->onDelete('cascade');
         });
+        
     }
 
     /**

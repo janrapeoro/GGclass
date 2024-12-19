@@ -11,8 +11,15 @@ class Student extends Model
 
     protected $primaryKey = 'student_id'; 
 
+    // Relationship for assessment scores
     public function scores()
     {
         return $this->hasMany(Score::class, 'student_id', 'student_id');
+    }
+
+    // Relationship for exam scores
+    public function examScores()
+    {
+        return $this->hasMany(ExamScores::class, 'student_id', 'student_id');
     }
 }

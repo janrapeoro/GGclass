@@ -14,7 +14,7 @@ class ExamScoreSeeder extends Seeder
     public function run()
     {
         // Seed scores for various students and assessment types
-        DB::table('exams_scores')->insert([
+        DB::table('exam_scores')->insert([
             // Jan Raphael's Scores
             [
                 'student_id' => '202010501',
@@ -26,27 +26,28 @@ class ExamScoreSeeder extends Seeder
 
             [
                 'student_id' => '202010501',
-                'exams_type_id' =>1, // Midterm
-                'score' => 46,
+                'exams_type_id' =>2, // Midterm
+                'score' => 45,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
 
             [
                 'student_id' => '202010501',
-                'exams_type_id' => 1, // PreFinal
-                'score' => 47,
+                'exams_type_id' =>3, // Prefinal
+                'score' => 45,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
             [
                 'student_id' => '202010501',
-                'exams_type_id' => 1, // FinalExam
-                'score' => 48,
+                'exams_type_id' =>4, // Final
+                'score' => 45,
                 'created_at' => now(),
                 'updated_at' => now(),
-                
             ],
+
 
         ]);
 }

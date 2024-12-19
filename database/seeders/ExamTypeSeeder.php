@@ -14,10 +14,34 @@ class ExamTypeSeeder extends Seeder
     public function run()
     {
         // Seed data for assessment types
-        DB::table('exams_type')->insert([
+        DB::table('exam_types')->insert([
 
             [
                 'exams_type_name' => 'Prelim Exam',
+                'total_scores' => '60',
+                'exams_id' => '202400028', // Links to 'Examination'
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'exams_type_name' => 'Midterm Exam',
+                'total_scores' => '60',
+                'exams_id' => '202400028', // Links to 'Examination'
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'exams_type_name' => 'Prefinal Exam',
+                'total_scores' => '60',
+                'exams_id' => '202400028', // Links to 'Examination'
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'exams_type_name' => 'Final Exam',
                 'total_scores' => '60',
                 'exams_id' => '202400028', // Links to 'Examination'
                 'created_at' => now(),

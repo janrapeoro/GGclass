@@ -16,7 +16,10 @@ Route::get('/students-list', [StudentController::class, 'index'])->name('student
 Route::get('/students/{id}', [StudentController::class, 'show'])->name('student-details');
 
 // grade-book.student-assessment.student-score
-Route::get('/students/{student_id}/assessment/{assessment_id}/scores', [StudentController::class, 'viewScores'])->name('student-scores');
+Route::get('/students/{student_id}/assessment/{assessment_id}/scores', [StudentController::class, 'viewAssessmentScores'])->name('student-assessment-scores');
+
+// Route to view a student's exam scores
+Route::get('/students/{student_id}/exam/{exam_id}/scores', [StudentController::class, 'viewExamScores'])->name('student-exam-scores');
 
 // Route for exporting the Excel file
 Route::get('/students-list/export', [StudentController::class, 'export'])->name('student-list.export');
