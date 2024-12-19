@@ -3,6 +3,7 @@
 use App\Http\Controllers\ClassController;
 use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\StudentController;
+use App\Exports\StudentsExport;
 use Illuminate\Support\Facades\Route;
 
 
@@ -23,6 +24,7 @@ Route::get('/students/{student_id}/exam/{exam_id}/scores', [StudentController::c
 
 // Route for exporting the Excel file
 Route::get('/students-list/export', [StudentController::class, 'export'])->name('student-list.export');
+
 
 
 //class-dashboard // 
